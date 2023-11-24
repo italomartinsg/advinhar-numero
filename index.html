@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhar Número</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <div class="game-container">
+      <h1> Advinhar Número</h1>
+      <label for="palpite" class="label-input">Digite aqui seu número de 1 a 100: </label>
+      <input type="number" id="palpite">
+      <button class="button" onclick="enviarNumero()">Enviar</button>
+      <h2 class="resultado"></h2>
+      <p class="tentativas"></p>
+      <p class="numeros-tentados"></p>
+      <p class="pertoOuLonge"></p>
+      <button class=" button button-invisivel desativo" onclick="reiniciar()">Reiniciar Jogo</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>

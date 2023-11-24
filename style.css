@@ -1,0 +1,48 @@
+body {
+  background: rgb(107, 107, 235);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.game-container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.label-input {
+  color: white;
+  font-size: 1.4rem;
+}
+
+#palpite {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.button {
+  border: none;
+  padding: 8px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button:hover {
+  background: rgb(173, 173, 173);
+}
+
+.desativo {
+  display: none;
+}
+
+.acertou {
+  color: rgb(9, 196, 9);
+}
+
+.errou {
+  color: red;
+}
