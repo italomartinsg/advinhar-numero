@@ -3,7 +3,7 @@ let tentativas = 0;
 let nTentativas = document.querySelector(".tentativas");
 
 const numerosTentados = [];
-let maxTentativas = 20;
+let maxTentativas = 10;
 function enviarNumero() {
   let numeroPalpite = document.querySelector("#palpite").value;
 
@@ -17,7 +17,7 @@ function enviarNumero() {
 
     document.querySelector(
       ".numeros-tentados"
-    ).innerHTML = `Números chutados: ${numerosTentados}`;
+    ).innerHTML = `Números Inseridos: ${numerosTentados}`;
     document.querySelector("#palpite").value = "";
     if (tentativas < maxTentativas) {
       //Verificando acertou ou se esta proximo ao valor.
@@ -33,10 +33,10 @@ function enviarNumero() {
         document.querySelector(".pertoOuLonge").innerHTML = "";
       } else if (numeroPalpite > numeroAleatorio) {
         document.querySelector(".pertoOuLonge").innerHTML =
-          "Número mais alto! Tente um número menor";
+          "Dica: Número alto! Tente um número menor";
       } else {
         document.querySelector(".pertoOuLonge").innerHTML =
-          "Número mais baixo! Tente um número maior";
+          "Dica: Número  baixo! Tente um número maior";
       }
     } else {
       document.querySelector(".resultado").classList.add("errou");
